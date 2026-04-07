@@ -40,9 +40,11 @@ if [ -x /usr/bin/dircolors ]; then
     export LESS_TERMCAP_ue=$'\E[0m'
 fi
 
+# Extra Aliases
 alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
+alias kg='ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -N ""'
 
 # Editor
 export EDITOR=/usr/bin/nvim
