@@ -12,7 +12,7 @@ nmap -sS -F -Pn -n --open -oA nmap-quick-tcp-sweep-%Y_%m_%d-%H_%M_%S $*
 }
 
 nmap-quick-udp-sweep() {
-nmap -sU -F -Pn -n -oA nmap-quick-udp-sweep-%Y_%m_%d-%H_%M_%S $*
+nmap -sU -F -Pn -n --open -oA nmap-quick-udp-sweep-%Y_%m_%d-%H_%M_%S $*
 }
 
 nmap-tcp-service-scan() {
